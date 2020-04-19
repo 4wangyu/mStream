@@ -133,12 +133,10 @@ mStream is built on top some great open-source libraries:
 
 And thanks to the [LinuxServer.io](https://www.linuxserver.io/) group for maintaining the Docker image!
 
-## Deploy to Heroku
+## Deploy to GCP
 
 Use `release` branch for deploying.
 
 ```
-git push -f heroku release:master
+gcloud app deploy
 ```
-
-Audio size should not exceed 400M as Slug size limit for Heroku is 500 MB.
