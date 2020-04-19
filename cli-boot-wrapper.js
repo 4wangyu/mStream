@@ -8,7 +8,12 @@ if (process.versions["electron"]) {
   return;
 }
 
-const config = require("./modules/config/configure-commander.js").setup(process.argv);
+// Read config from cli
+// const config = require("./modules/config/configure-commander.js").setup(process.argv);
+
+// Read config from file
+const config = require("./config.json");
+
 
 // User ran a maintenance operation.  End the program
 if (!config){
